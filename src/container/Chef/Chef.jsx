@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import './Chef.css';
+import "./Chef.module.css";
 
-const Chef = () => (
-  <div>
-    Chef
-  </div>
-);
+const Chef = () => <div>Chef</div>;
 
 export default Chef;
