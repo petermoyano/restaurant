@@ -1,5 +1,56 @@
 .app__navbar {
   width: 100%;
   display: flex;
-  border: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+  padding: 1rem 2rem;
+}
+
+.app__navbar_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__navbar_logo img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.app__navbar_links {
+  flex: 1; /* (1, 1, 0) flex-shrink: 1, flex-grow: 1, flex-basis: 0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbar_links li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.app__navbar_links li:hover {
+  color: var(--color-grey);
+}
+
+.app__navbar_login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.app__navbar_login a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.app__navbar_login a:hover {
+  border-bottom: 1px solid var(--color-golden);
+}
+
+.app__navbar_login div {
+  width: 1px;
+  height: 30px;
+  background-color: var(--color-grey);
 }
